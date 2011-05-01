@@ -19,9 +19,12 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
+    "examples/1.flv",
+    "examples/libvlc_tutorial.rb",
     "lib/vlcrb.rb",
     "lib/vlcrb/ffi/libvlc.rb",
     "lib/vlcrb/ffi/libvlc_events.rb",
@@ -33,10 +36,12 @@ Gem::Specification.new do |s|
     "lib/vlcrb/ffi/libvlc_media_player.rb",
     "lib/vlcrb/ffi/libvlc_structures.rb",
     "lib/vlcrb/ffi/libvlc_vlm.rb",
+    "lib/vlcrb/ffi/types.rb",
     "lib/vlcrb/ffi/vlc.rb",
     "lib/vlcrb/version.rb",
     "test/helper.rb",
-    "test/test_vlcrb.rb"
+    "test/test_vlcrb.rb",
+    "vlcrb.gemspec"
   ]
   s.homepage = %q{http://github.com/nashby/vlcrb}
   s.licenses = ["MIT"]
@@ -44,6 +49,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.6.2}
   s.summary = %q{Ruby wrapper for libVLC}
   s.test_files = [
+    "examples/libvlc_tutorial.rb",
     "test/helper.rb",
     "test/test_vlcrb.rb"
   ]
