@@ -1,0 +1,1134 @@
+<?xml version="1.0" ?> 
+<top id="1" addr="b772b9e8" >
+    <attributelist id="2" addr="b772b9e8" >
+        <attribute name="outfile" value="interfaces/libvlc_vlm_wrap.c" id="3" addr="b7738278" />
+        <attribute name="name" value="vlc" id="4" addr="b7738278" />
+        <attribute name="module" value="vlc" id="5" addr="b7734368" />
+        <attribute name="inputfile" value="interfaces/libvlc_vlm.i" id="6" addr="b7738278" />
+        <attribute name="classes" value="b7737e68" id="7" addr="b7737e68" />
+        <attribute name="infile" value="interfaces/libvlc_vlm.i" id="8" addr="b7738278" />
+        <attribute name="outfile_h" value="interfaces/libvlc_vlm_wrap.h" id="9" addr="b7738278" />
+    </attributelist >
+
+    <include id="10" addr="b7732f88" >
+        <attributelist id="11" addr="b7732f88" >
+            <attribute name="name" value="/usr/share/swig1.3//swig.swg" id="12" addr="b7738278" />
+        </attributelist >
+
+        <include id="13" addr="b7732fb8" >
+            <attributelist id="14" addr="b7732fb8" >
+                <attribute name="name" value="/usr/share/swig1.3//swigwarnings.swg" id="15" addr="b7738278" />
+            </attributelist >
+
+            <include id="16" addr="b7733088" >
+                <attributelist id="17" addr="b7733088" >
+                    <attribute name="name" value="/usr/share/swig1.3//swigwarn.swg" id="18" addr="b7738278" />
+                </attributelist >
+             
+            </include >
+        </include >
+        <typemap id="19" addr="b77333d8" >
+            <attributelist id="20" addr="b77333d8" >
+                <attribute name="code" value="free($1);" id="21" addr="b7738278" />
+                <attribute name="method" value="newfree" id="22" addr="b7738278" />
+            </attributelist >
+
+            <typemapitem id="23" addr="b7733348" >
+                <attributelist id="24" addr="b7733348" >
+                    <parmlist id="25" addr="b7733368" >
+                        <parm id="26">
+                            <attributelist id="27" addr="b7733368" >
+                                <attribute name="type" value="p.char" id="28" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="29" addr="b77334e8" >
+            <attributelist id="30" addr="b77334e8" >
+                <attribute name="code" value="{&#10;  if ($1) free((char *)$1);&#10;  if ($input) {&#10;     $1 = ($1_type) malloc(strlen((const char *)$input)+1);&#10;     strcpy((char *)$1, (const char *)$input);&#10;  } else {&#10;     $1 = 0;&#10;  }&#10;}" id="31" addr="b7738278" />
+                <attribute name="method" value="memberin" id="32" addr="b7738278" />
+            </attributelist >
+
+            <typemapitem id="33" addr="b7733488" >
+                <attributelist id="34" addr="b7733488" >
+                    <parmlist id="35" addr="b77334a8" >
+                        <parm id="36">
+                            <attributelist id="37" addr="b77334a8" >
+                                <attribute name="type" value="p.char" id="38" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="39" addr="b7733618" >
+            <attributelist id="40" addr="b7733618" >
+                <kwargs id="41" addr="b7733518" >
+                    <attributelist id="42" addr="b7733518" >
+                        <attribute name="name" value="warning" id="43" addr="b7738278" />
+                        <attribute name="value" value="451:Setting a const char * variable may leak memory." id="44" addr="b7738278" />
+                    </attributelist >
+                    <kwargssitem id="45" addr="b7733528" >
+                        <attributelist id="46" addr="b7733528" >
+                        </attributelist >
+                    </kwargssitem >
+                    <kwargssitem id="47" addr="b7733548" >
+                        <attributelist id="48" addr="b7733548" >
+                        </attributelist >
+                    </kwargssitem >
+                </kwargs >
+                <attribute name="code" value="{&#10;  if ($input) {&#10;     $1 = ($1_type) malloc(strlen((const char *)$input)+1);&#10;     strcpy((char *)$1, (const char *)$input);&#10;  } else {&#10;     $1 = 0;&#10;  }&#10;}" id="49" addr="b7738278" />
+                <attribute name="method" value="memberin" id="50" addr="b7738278" />
+            </attributelist >
+
+            <typemapitem id="51" addr="b77335b8" >
+                <attributelist id="52" addr="b77335b8" >
+                    <parmlist id="53" addr="b77335d8" >
+                        <parm id="54">
+                            <attributelist id="55" addr="b77335d8" >
+                                <attribute name="type" value="p.q(const).char" id="56" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="57" addr="b7733708" >
+            <attributelist id="58" addr="b7733708" >
+                <attribute name="code" value="{&#10;  if ($1) free((char *)$1);&#10;  if ($input) {&#10;     $1 = ($1_type) malloc(strlen((const char *)$input)+1);&#10;     strcpy((char *)$1, (const char *)$input);&#10;  } else {&#10;     $1 = 0;&#10;  }&#10;}" id="59" addr="b7738278" />
+                <attribute name="method" value="globalin" id="60" addr="b7738278" />
+            </attributelist >
+
+            <typemapitem id="61" addr="b77336a8" >
+                <attributelist id="62" addr="b77336a8" >
+                    <parmlist id="63" addr="b77336c8" >
+                        <parm id="64">
+                            <attributelist id="65" addr="b77336c8" >
+                                <attribute name="type" value="p.char" id="66" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="67" addr="b7733828" >
+            <attributelist id="68" addr="b7733828" >
+                <kwargs id="69" addr="b7733738" >
+                    <attributelist id="70" addr="b7733738" >
+                        <attribute name="name" value="warning" id="71" addr="b7738278" />
+                        <attribute name="value" value="451:Setting a const char * variable may leak memory." id="72" addr="b7738278" />
+                    </attributelist >
+                    <kwargssitem id="73" addr="b7733748" >
+                        <attributelist id="74" addr="b7733748" >
+                        </attributelist >
+                    </kwargssitem >
+                    <kwargssitem id="75" addr="b7733758" >
+                        <attributelist id="76" addr="b7733758" >
+                        </attributelist >
+                    </kwargssitem >
+                </kwargs >
+                <attribute name="code" value="{&#10;  if ($input) {&#10;     $1 = ($1_type) malloc(strlen((const char *)$input)+1);&#10;     strcpy((char *)$1, (const char *)$input);&#10;  } else {&#10;     $1 = 0;&#10;  }&#10;}" id="77" addr="b7738278" />
+                <attribute name="method" value="globalin" id="78" addr="b7738278" />
+            </attributelist >
+
+            <typemapitem id="79" addr="b77337c8" >
+                <attributelist id="80" addr="b77337c8" >
+                    <parmlist id="81" addr="b77337e8" >
+                        <parm id="82">
+                            <attributelist id="83" addr="b77337e8" >
+                                <attribute name="type" value="p.q(const).char" id="84" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="85" addr="b7733938" >
+            <attributelist id="86" addr="b7733938" >
+                <attribute name="code" value="{&#10;  if($input) {&#10;    strncpy((char*)$1, (const char *)$input, $1_dim0-1);&#10;    $1[$1_dim0-1] = 0;&#10;  } else {&#10;    $1[0] = 0;&#10;  }&#10;}" id="87" addr="b7738278" />
+                <attribute name="method" value="memberin" id="88" addr="b7738278" />
+            </attributelist >
+
+            <typemapitem id="89" addr="b77338d8" >
+                <attributelist id="90" addr="b77338d8" >
+                    <parmlist id="91" addr="b77338f8" >
+                        <parm id="92">
+                            <attributelist id="93" addr="b77338f8" >
+                                <attribute name="type" value="a(ANY).char" id="94" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="95" addr="b7733a38" >
+            <attributelist id="96" addr="b7733a38" >
+                <attribute name="code" value="{&#10;  if($input) {&#10;    strncpy((char*)$1, (const char *)$input, $1_dim0-1);&#10;    $1[$1_dim0-1] = 0;&#10;  } else {&#10;    $1[0] = 0;&#10;  }&#10;}" id="97" addr="b7738278" />
+                <attribute name="method" value="globalin" id="98" addr="b7738278" />
+            </attributelist >
+
+            <typemapitem id="99" addr="b77339d8" >
+                <attributelist id="100" addr="b77339d8" >
+                    <parmlist id="101" addr="b77339f8" >
+                        <parm id="102">
+                            <attributelist id="103" addr="b77339f8" >
+                                <attribute name="type" value="a(ANY).char" id="104" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="105" addr="b7733b18" >
+            <attributelist id="106" addr="b7733b18" >
+                <attribute name="code" value="{&#10;  if ($input) strcpy((char *)$1, (const char *)$input);&#10;  else $1[0] = 0;&#10;}" id="107" addr="b7738278" />
+                <attribute name="method" value="memberin" id="108" addr="b7738278" />
+            </attributelist >
+
+            <typemapitem id="109" addr="b7733ab8" >
+                <attributelist id="110" addr="b7733ab8" >
+                    <parmlist id="111" addr="b7733ad8" >
+                        <parm id="112">
+                            <attributelist id="113" addr="b7733ad8" >
+                                <attribute name="type" value="a().char" id="114" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="115" addr="b7733bf8" >
+            <attributelist id="116" addr="b7733bf8" >
+                <attribute name="code" value="{&#10;  if ($input) strcpy((char *)$1, (const char *)$input);&#10;  else $1[0] = 0;&#10;}" id="117" addr="b7738278" />
+                <attribute name="method" value="globalin" id="118" addr="b7738278" />
+            </attributelist >
+
+            <typemapitem id="119" addr="b7733b98" >
+                <attributelist id="120" addr="b7733b98" >
+                    <parmlist id="121" addr="b7733bb8" >
+                        <parm id="122">
+                            <attributelist id="123" addr="b7733bb8" >
+                                <attribute name="type" value="a().char" id="124" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="125" addr="b7733cf8" >
+            <attributelist id="126" addr="b7733cf8" >
+                <attribute name="code" value="{&#10;  size_t ii;&#10;  $1_basetype *b = ($1_basetype *) $1;&#10;  for (ii = 0; ii &lt; (size_t)$1_size; ii++) b[ii] = *(($1_basetype *) $input + ii);&#10;}" id="127" addr="b7738278" />
+                <attribute name="method" value="memberin" id="128" addr="b7738278" />
+            </attributelist >
+
+            <typemapitem id="129" addr="b7733c98" >
+                <attributelist id="130" addr="b7733c98" >
+                    <parmlist id="131" addr="b7733cb8" >
+                        <parm id="132">
+                            <attributelist id="133" addr="b7733cb8" >
+                                <attribute name="type" value="a(ANY).SWIGTYPE" id="134" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="135" addr="b7733df8" >
+            <attributelist id="136" addr="b7733df8" >
+                <attribute name="code" value="{&#10;  size_t ii;&#10;  $1_basetype *b = ($1_basetype *) $1;&#10;  for (ii = 0; ii &lt; (size_t)$1_size; ii++) b[ii] = *(($1_basetype *) $input + ii);&#10;}" id="137" addr="b7738278" />
+                <attribute name="method" value="globalin" id="138" addr="b7738278" />
+            </attributelist >
+
+            <typemapitem id="139" addr="b7733d98" >
+                <attributelist id="140" addr="b7733d98" >
+                    <parmlist id="141" addr="b7733db8" >
+                        <parm id="142">
+                            <attributelist id="143" addr="b7733db8" >
+                                <attribute name="type" value="a(ANY).SWIGTYPE" id="144" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="145" addr="b7733f18" >
+            <attributelist id="146" addr="b7733f18" >
+                <attribute name="code" value="{&#10;  $basetype (*inp)[$1_dim1] = ($basetype (*)[$1_dim1])($input);&#10;  $basetype (*dest)[$1_dim1] = ($basetype (*)[$1_dim1])($1);&#10;  size_t ii = 0;&#10;  for (; ii &lt; $1_dim0; ++ii) {&#10;    $basetype *ip = inp[ii];&#10;    $basetype *dp = dest[ii];&#10;    size_t jj = 0;&#10;    for (; jj &lt; $1_dim1; ++jj) dp[jj] = ip[jj];&#10;  }&#10;}" id="147" addr="b7738278" />
+                <attribute name="method" value="memberin" id="148" addr="b7738278" />
+            </attributelist >
+
+            <typemapitem id="149" addr="b7733e88" >
+                <attributelist id="150" addr="b7733e88" >
+                    <parmlist id="151" addr="b7733ed8" >
+                        <parm id="152">
+                            <attributelist id="153" addr="b7733ed8" >
+                                <attribute name="type" value="a(ANY).a(ANY).SWIGTYPE" id="154" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="155" addr="b7734038" >
+            <attributelist id="156" addr="b7734038" >
+                <attribute name="code" value="{&#10;  $basetype (*inp)[$1_dim1] = ($basetype (*)[$1_dim1])($input);&#10;  $basetype (*dest)[$1_dim1] = ($basetype (*)[$1_dim1])($1);&#10;  size_t ii = 0;&#10;  for (; ii &lt; $1_dim0; ++ii) {&#10;    $basetype *ip = inp[ii];&#10;    $basetype *dp = dest[ii];&#10;    size_t jj = 0;&#10;    for (; jj &lt; $1_dim1; ++jj) dp[jj] = ip[jj];&#10;  }&#10;}" id="157" addr="b7738278" />
+                <attribute name="method" value="globalin" id="158" addr="b7738278" />
+            </attributelist >
+
+            <typemapitem id="159" addr="b7733fa8" >
+                <attributelist id="160" addr="b7733fa8" >
+                    <parmlist id="161" addr="b7733ff8" >
+                        <parm id="162">
+                            <attributelist id="163" addr="b7733ff8" >
+                                <attribute name="type" value="a(ANY).a(ANY).SWIGTYPE" id="164" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="165" addr="b7734238" >
+            <attributelist id="166" addr="b7734238" >
+                <kwargs id="167" addr="b7734078" >
+                    <attributelist id="168" addr="b7734078" >
+                        <attribute name="name" value="numinputs" id="169" addr="b7738278" />
+                        <attribute name="value" value="0" id="170" addr="b7738278" />
+                    </attributelist >
+                    <kwargssitem id="171" addr="b7734088" >
+                        <attributelist id="172" addr="b7734088" >
+                        </attributelist >
+                    </kwargssitem >
+                    <kwargssitem id="173" addr="b7734098" >
+                        <attributelist id="174" addr="b7734098" >
+                        </attributelist >
+                    </kwargssitem >
+                </kwargs >
+                <attribute name="code" value="" id="175" addr="b7738278" />
+                <attribute name="method" value="in" id="176" addr="b7738278" />
+            </attributelist >
+
+            <typemapitem id="177" addr="b7734118" >
+                <attributelist id="178" addr="b7734118" >
+                    <parmlist id="179" addr="b7734138" >
+                        <parm id="180">
+                            <attributelist id="181" addr="b7734138" >
+                                <attribute name="name" value="VARARGS_SENTINEL" id="182" addr="b7738278" />
+                                <attribute name="type" value="p.SWIGTYPE" id="183" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+            <typemapitem id="184" addr="b77341c8" >
+                <attributelist id="185" addr="b77341c8" >
+                    <parmlist id="186" addr="b77341e8" >
+                        <parm id="187">
+                            <attributelist id="188" addr="b77341e8" >
+                                <attribute name="name" value="VARARGS_SENTINEL" id="189" addr="b7738278" />
+                                <attribute name="type" value="SWIGTYPE" id="190" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <insert id="191" addr="b7734278" >
+            <attributelist id="192" addr="b7734278" >
+                <attribute name="code" value="/* -----------------------------------------------------------------------------&#10; *  This section contains generic SWIG labels for method/variable&#10; *  declarations/attributes, and other compiler dependent labels.&#10; * ----------------------------------------------------------------------------- */&#10;&#10;/* template workaround for compilers that cannot correctly implement the C++ standard */&#10;#ifndef SWIGTEMPLATEDISAMBIGUATOR&#10;# if defined(__SUNPRO_CC) &amp;&amp; (__SUNPRO_CC &lt;= 0x560)&#10;#  define SWIGTEMPLATEDISAMBIGUATOR template&#10;# elif defined(__HP_aCC)&#10;/* Needed even with `aCC -AA' when `aCC -V' reports HP ANSI C++ B3910B A.03.55 */&#10;/* If we find a maximum version that requires this, the test would be __HP_aCC &lt;= 35500 for A.03.55 */&#10;#  define SWIGTEMPLATEDISAMBIGUATOR template&#10;# else&#10;#  define SWIGTEMPLATEDISAMBIGUATOR&#10;# endif&#10;#endif&#10;&#10;/* inline attribute */&#10;#ifndef SWIGINLINE&#10;# if defined(__cplusplus) || (defined(__GNUC__) &amp;&amp; !defined(__STRICT_ANSI__))&#10;#   define SWIGINLINE inline&#10;# else&#10;#   define SWIGINLINE&#10;# endif&#10;#endif&#10;&#10;/* attribute recognised by some compilers to avoid 'unused' warnings */&#10;#ifndef SWIGUNUSED&#10;# if defined(__GNUC__)&#10;#   if !(defined(__cplusplus)) || (__GNUC__ > 3 || (__GNUC__ == 3 &amp;&amp; __GNUC_MINOR__ >= 4))&#10;#     define SWIGUNUSED __attribute__ ((__unused__)) &#10;#   else&#10;#     define SWIGUNUSED&#10;#   endif&#10;# elif defined(__ICC)&#10;#   define SWIGUNUSED __attribute__ ((__unused__)) &#10;# else&#10;#   define SWIGUNUSED &#10;# endif&#10;#endif&#10;&#10;#ifndef SWIG_MSC_UNSUPPRESS_4505&#10;# if defined(_MSC_VER)&#10;#   pragma warning(disable : 4505) /* unreferenced local function has been removed */&#10;# endif &#10;#endif&#10;&#10;#ifndef SWIGUNUSEDPARM&#10;# ifdef __cplusplus&#10;#   define SWIGUNUSEDPARM(p)&#10;# else&#10;#   define SWIGUNUSEDPARM(p) p SWIGUNUSED &#10;# endif&#10;#endif&#10;&#10;/* internal SWIG method */&#10;#ifndef SWIGINTERN&#10;# define SWIGINTERN static SWIGUNUSED&#10;#endif&#10;&#10;/* internal inline SWIG method */&#10;#ifndef SWIGINTERNINLINE&#10;# define SWIGINTERNINLINE SWIGINTERN SWIGINLINE&#10;#endif&#10;&#10;/* exporting methods */&#10;#if (__GNUC__ >= 4) || (__GNUC__ == 3 &amp;&amp; __GNUC_MINOR__ >= 4)&#10;#  ifndef GCC_HASCLASSVISIBILITY&#10;#    define GCC_HASCLASSVISIBILITY&#10;#  endif&#10;#endif&#10;&#10;#ifndef SWIGEXPORT&#10;# if defined(_WIN32) || defined(__WIN32__) || defined(__CYGWIN__)&#10;#   if defined(STATIC_LINKED)&#10;#     define SWIGEXPORT&#10;#   else&#10;#     define SWIGEXPORT __declspec(dllexport)&#10;#   endif&#10;# else&#10;#   if defined(__GNUC__) &amp;&amp; defined(GCC_HASCLASSVISIBILITY)&#10;#     define SWIGEXPORT __attribute__ ((visibility(&quot;default&quot;)))&#10;#   else&#10;#     define SWIGEXPORT&#10;#   endif&#10;# endif&#10;#endif&#10;&#10;/* calling conventions for Windows */&#10;#ifndef SWIGSTDCALL&#10;# if defined(_WIN32) || defined(__WIN32__) || defined(__CYGWIN__)&#10;#   define SWIGSTDCALL __stdcall&#10;# else&#10;#   define SWIGSTDCALL&#10;# endif &#10;#endif&#10;&#10;/* Deal with Microsoft's attempt at deprecating C standard runtime functions */&#10;#if !defined(SWIG_NO_CRT_SECURE_NO_DEPRECATE) &amp;&amp; defined(_MSC_VER) &amp;&amp; !defined(_CRT_SECURE_NO_DEPRECATE)&#10;# define _CRT_SECURE_NO_DEPRECATE&#10;#endif&#10;&#10;/* Deal with Microsoft's attempt at deprecating methods in the standard C++ library */&#10;#if !defined(SWIG_NO_SCL_SECURE_NO_DEPRECATE) &amp;&amp; defined(_MSC_VER) &amp;&amp; !defined(_SCL_SECURE_NO_DEPRECATE)&#10;# define _SCL_SECURE_NO_DEPRECATE&#10;#endif&#10;&#10;" id="193" addr="b7738278" />
+                <attribute name="section" value="runtime" id="194" addr="b7738278" />
+            </attributelist >
+         
+        </insert >
+    </include >
+    <include id="195" addr="b7734348" >
+        <attributelist id="196" addr="b7734348" >
+            <attribute name="name" value="interfaces/libvlc_vlm.i" id="197" addr="b7738278" />
+            <attribute name="module" value="" id="198" addr="b7734398" />
+            <attribute name="options" value="b77342f8" id="199" addr="b77342f8" />
+        </attributelist >
+
+        <module id="200" addr="b7734368" >
+            <attributelist id="201" addr="b7734368" >
+                <attribute name="name" value="vlc" id="202" addr="b7738278" />
+            </attributelist >
+         
+        </module >
+        <insert id="203" addr="b77343b8" >
+            <attributelist id="204" addr="b77343b8" >
+                <attribute name="code" value="&#10;module VLC&#10;	module VLM&#10;  	extend FFI::Library&#10;  	ffi_lib &quot;libvlc&quot;&#10;" id="205" addr="b7738278" />
+            </attributelist >
+         
+        </insert >
+        <include id="206" addr="b77343f8" >
+            <attributelist id="207" addr="b77343f8" >
+                <attribute name="name" value="interfaces/libvlc_api.h" id="208" addr="b7738278" />
+            </attributelist >
+         
+        </include >
+        <include id="209" addr="b7734448" >
+            <attributelist id="210" addr="b7734448" >
+                <attribute name="name" value="/usr/include/vlc/libvlc_vlm.h" id="211" addr="b7738278" />
+            </attributelist >
+
+            <constant id="212" addr="b7734488" >
+                <attributelist id="213" addr="b7734488" >
+                    <attribute name="sym_name" value="LIBVLC_VLM_H" id="214" addr="b7738278" />
+                    <attribute name="name" value="LIBVLC_VLM_H" id="215" addr="b7738278" />
+                    <attribute name="feature_immutable" value="1" id="216" addr="b7738278" />
+                    <attribute name="value" value="1" id="217" addr="b7738278" />
+                    <attribute name="storage" value="%constant" id="218" addr="b7738278" />
+                    <attribute name="type" value="int" id="219" addr="b7738278" />
+                    <attribute name="sym_symtab" value="b772b3d8" id="220" addr="b772b3d8" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="221" addr="b7738278" />
+                </attributelist >
+             
+            </constant >
+            <cdecl id="222" addr="b7734658" >
+                <attributelist id="223" addr="b7734658" >
+                    <attribute name="sym_name" value="libvlc_vlm_release" id="224" addr="b7738278" />
+                    <attribute name="name" value="libvlc_vlm_release" id="225" addr="b7738278" />
+                    <attribute name="decl" value="f(p.libvlc_instance_t)." id="226" addr="b7738278" />
+                    <parmlist id="227" addr="b7734608" >
+                        <parm id="228">
+                            <attributelist id="229" addr="b7734608" >
+                                <attribute name="name" value="p_instance" id="230" addr="b7738278" />
+                                <attribute name="type" value="p.libvlc_instance_t" id="231" addr="b7738278" />
+                                <attribute name="compactdefargs" value="1" id="232" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="233" addr="b7738278" />
+                    <attribute name="type" value="void" id="234" addr="b7738278" />
+                    <attribute name="sym_symtab" value="b772b3d8" id="235" addr="b772b3d8" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="236" addr="b7738278" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="237" addr="b7734c38" >
+                <attributelist id="238" addr="b7734c38" >
+                    <attribute name="sym_name" value="libvlc_vlm_add_broadcast" id="239" addr="b7738278" />
+                    <attribute name="name" value="libvlc_vlm_add_broadcast" id="240" addr="b7738278" />
+                    <attribute name="decl" value="f(p.libvlc_instance_t,p.q(const).char,p.q(const).char,p.q(const).char,int,p.q(const).p.q(const).char,int,int)." id="241" addr="b7738278" />
+                    <parmlist id="242" addr="b77347a8" >
+                        <parm id="243">
+                            <attributelist id="244" addr="b77347a8" >
+                                <attribute name="name" value="p_instance" id="245" addr="b7738278" />
+                                <attribute name="type" value="p.libvlc_instance_t" id="246" addr="b7738278" />
+                                <attribute name="compactdefargs" value="1" id="247" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="248">
+                            <attributelist id="249" addr="b7734848" >
+                                <attribute name="name" value="psz_name" id="250" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="251" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="252">
+                            <attributelist id="253" addr="b77348e8" >
+                                <attribute name="name" value="psz_input" id="254" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="255" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="256">
+                            <attributelist id="257" addr="b7734988" >
+                                <attribute name="name" value="psz_output" id="258" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="259" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="260">
+                            <attributelist id="261" addr="b7734a18" >
+                                <attribute name="name" value="i_options" id="262" addr="b7738278" />
+                                <attribute name="type" value="int" id="263" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="264">
+                            <attributelist id="265" addr="b7734ac8" >
+                                <attribute name="name" value="ppsz_options" id="266" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).p.q(const).char" id="267" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="268">
+                            <attributelist id="269" addr="b7734b58" >
+                                <attribute name="name" value="b_enabled" id="270" addr="b7738278" />
+                                <attribute name="type" value="int" id="271" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="272">
+                            <attributelist id="273" addr="b7734be8" >
+                                <attribute name="name" value="b_loop" id="274" addr="b7738278" />
+                                <attribute name="type" value="int" id="275" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="276" addr="b7738278" />
+                    <attribute name="type" value="int" id="277" addr="b7738278" />
+                    <attribute name="sym_symtab" value="b772b3d8" id="278" addr="b772b3d8" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="279" addr="b7738278" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="280" addr="b7735138" >
+                <attributelist id="281" addr="b7735138" >
+                    <attribute name="sym_name" value="libvlc_vlm_add_vod" id="282" addr="b7738278" />
+                    <attribute name="name" value="libvlc_vlm_add_vod" id="283" addr="b7738278" />
+                    <attribute name="decl" value="f(p.libvlc_instance_t,p.q(const).char,p.q(const).char,int,p.q(const).p.q(const).char,int,p.q(const).char)." id="284" addr="b7738278" />
+                    <parmlist id="285" addr="b7734d38" >
+                        <parm id="286">
+                            <attributelist id="287" addr="b7734d38" >
+                                <attribute name="name" value="p_instance" id="288" addr="b7738278" />
+                                <attribute name="type" value="p.libvlc_instance_t" id="289" addr="b7738278" />
+                                <attribute name="compactdefargs" value="1" id="290" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="291">
+                            <attributelist id="292" addr="b7734dd8" >
+                                <attribute name="name" value="psz_name" id="293" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="294" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="295">
+                            <attributelist id="296" addr="b7734e78" >
+                                <attribute name="name" value="psz_input" id="297" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="298" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="299">
+                            <attributelist id="300" addr="b7734f08" >
+                                <attribute name="name" value="i_options" id="301" addr="b7738278" />
+                                <attribute name="type" value="int" id="302" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="303">
+                            <attributelist id="304" addr="b7734fb8" >
+                                <attribute name="name" value="ppsz_options" id="305" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).p.q(const).char" id="306" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="307">
+                            <attributelist id="308" addr="b7735048" >
+                                <attribute name="name" value="b_enabled" id="309" addr="b7738278" />
+                                <attribute name="type" value="int" id="310" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="311">
+                            <attributelist id="312" addr="b77350e8" >
+                                <attribute name="name" value="psz_mux" id="313" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="314" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="315" addr="b7738278" />
+                    <attribute name="type" value="int" id="316" addr="b7738278" />
+                    <attribute name="sym_symtab" value="b772b3d8" id="317" addr="b772b3d8" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="318" addr="b7738278" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="319" addr="b7735328" >
+                <attributelist id="320" addr="b7735328" >
+                    <attribute name="sym_name" value="libvlc_vlm_del_media" id="321" addr="b7738278" />
+                    <attribute name="name" value="libvlc_vlm_del_media" id="322" addr="b7738278" />
+                    <attribute name="decl" value="f(p.libvlc_instance_t,p.q(const).char)." id="323" addr="b7738278" />
+                    <parmlist id="324" addr="b7735238" >
+                        <parm id="325">
+                            <attributelist id="326" addr="b7735238" >
+                                <attribute name="name" value="p_instance" id="327" addr="b7738278" />
+                                <attribute name="type" value="p.libvlc_instance_t" id="328" addr="b7738278" />
+                                <attribute name="compactdefargs" value="1" id="329" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="330">
+                            <attributelist id="331" addr="b77352d8" >
+                                <attribute name="name" value="psz_name" id="332" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="333" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="334" addr="b7738278" />
+                    <attribute name="type" value="int" id="335" addr="b7738278" />
+                    <attribute name="sym_symtab" value="b772b3d8" id="336" addr="b772b3d8" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="337" addr="b7738278" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="338" addr="b77355a8" >
+                <attributelist id="339" addr="b77355a8" >
+                    <attribute name="sym_name" value="libvlc_vlm_set_enabled" id="340" addr="b7738278" />
+                    <attribute name="name" value="libvlc_vlm_set_enabled" id="341" addr="b7738278" />
+                    <attribute name="decl" value="f(p.libvlc_instance_t,p.q(const).char,int)." id="342" addr="b7738278" />
+                    <parmlist id="343" addr="b7735428" >
+                        <parm id="344">
+                            <attributelist id="345" addr="b7735428" >
+                                <attribute name="name" value="p_instance" id="346" addr="b7738278" />
+                                <attribute name="type" value="p.libvlc_instance_t" id="347" addr="b7738278" />
+                                <attribute name="compactdefargs" value="1" id="348" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="349">
+                            <attributelist id="350" addr="b77354c8" >
+                                <attribute name="name" value="psz_name" id="351" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="352" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="353">
+                            <attributelist id="354" addr="b7735558" >
+                                <attribute name="name" value="b_enabled" id="355" addr="b7738278" />
+                                <attribute name="type" value="int" id="356" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="357" addr="b7738278" />
+                    <attribute name="type" value="int" id="358" addr="b7738278" />
+                    <attribute name="sym_symtab" value="b772b3d8" id="359" addr="b772b3d8" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="360" addr="b7738278" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="361" addr="b7735838" >
+                <attributelist id="362" addr="b7735838" >
+                    <attribute name="sym_name" value="libvlc_vlm_set_output" id="363" addr="b7738278" />
+                    <attribute name="name" value="libvlc_vlm_set_output" id="364" addr="b7738278" />
+                    <attribute name="decl" value="f(p.libvlc_instance_t,p.q(const).char,p.q(const).char)." id="365" addr="b7738278" />
+                    <parmlist id="366" addr="b77356a8" >
+                        <parm id="367">
+                            <attributelist id="368" addr="b77356a8" >
+                                <attribute name="name" value="p_instance" id="369" addr="b7738278" />
+                                <attribute name="type" value="p.libvlc_instance_t" id="370" addr="b7738278" />
+                                <attribute name="compactdefargs" value="1" id="371" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="372">
+                            <attributelist id="373" addr="b7735748" >
+                                <attribute name="name" value="psz_name" id="374" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="375" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="376">
+                            <attributelist id="377" addr="b77357e8" >
+                                <attribute name="name" value="psz_output" id="378" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="379" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="380" addr="b7738278" />
+                    <attribute name="type" value="int" id="381" addr="b7738278" />
+                    <attribute name="sym_symtab" value="b772b3d8" id="382" addr="b772b3d8" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="383" addr="b7738278" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="384" addr="b7735ac8" >
+                <attributelist id="385" addr="b7735ac8" >
+                    <attribute name="sym_name" value="libvlc_vlm_set_input" id="386" addr="b7738278" />
+                    <attribute name="name" value="libvlc_vlm_set_input" id="387" addr="b7738278" />
+                    <attribute name="decl" value="f(p.libvlc_instance_t,p.q(const).char,p.q(const).char)." id="388" addr="b7738278" />
+                    <parmlist id="389" addr="b7735938" >
+                        <parm id="390">
+                            <attributelist id="391" addr="b7735938" >
+                                <attribute name="name" value="p_instance" id="392" addr="b7738278" />
+                                <attribute name="type" value="p.libvlc_instance_t" id="393" addr="b7738278" />
+                                <attribute name="compactdefargs" value="1" id="394" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="395">
+                            <attributelist id="396" addr="b77359d8" >
+                                <attribute name="name" value="psz_name" id="397" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="398" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="399">
+                            <attributelist id="400" addr="b7735a78" >
+                                <attribute name="name" value="psz_input" id="401" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="402" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="403" addr="b7738278" />
+                    <attribute name="type" value="int" id="404" addr="b7738278" />
+                    <attribute name="sym_symtab" value="b772b3d8" id="405" addr="b772b3d8" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="406" addr="b7738278" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="407" addr="b7735d58" >
+                <attributelist id="408" addr="b7735d58" >
+                    <attribute name="sym_name" value="libvlc_vlm_add_input" id="409" addr="b7738278" />
+                    <attribute name="name" value="libvlc_vlm_add_input" id="410" addr="b7738278" />
+                    <attribute name="decl" value="f(p.libvlc_instance_t,p.q(const).char,p.q(const).char)." id="411" addr="b7738278" />
+                    <parmlist id="412" addr="b7735bc8" >
+                        <parm id="413">
+                            <attributelist id="414" addr="b7735bc8" >
+                                <attribute name="name" value="p_instance" id="415" addr="b7738278" />
+                                <attribute name="type" value="p.libvlc_instance_t" id="416" addr="b7738278" />
+                                <attribute name="compactdefargs" value="1" id="417" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="418">
+                            <attributelist id="419" addr="b7735c68" >
+                                <attribute name="name" value="psz_name" id="420" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="421" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="422">
+                            <attributelist id="423" addr="b7735d08" >
+                                <attribute name="name" value="psz_input" id="424" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="425" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="426" addr="b7738278" />
+                    <attribute name="type" value="int" id="427" addr="b7738278" />
+                    <attribute name="sym_symtab" value="b772b3d8" id="428" addr="b772b3d8" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="429" addr="b7738278" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="430" addr="b7735fd8" >
+                <attributelist id="431" addr="b7735fd8" >
+                    <attribute name="sym_name" value="libvlc_vlm_set_loop" id="432" addr="b7738278" />
+                    <attribute name="name" value="libvlc_vlm_set_loop" id="433" addr="b7738278" />
+                    <attribute name="decl" value="f(p.libvlc_instance_t,p.q(const).char,int)." id="434" addr="b7738278" />
+                    <parmlist id="435" addr="b7735e58" >
+                        <parm id="436">
+                            <attributelist id="437" addr="b7735e58" >
+                                <attribute name="name" value="p_instance" id="438" addr="b7738278" />
+                                <attribute name="type" value="p.libvlc_instance_t" id="439" addr="b7738278" />
+                                <attribute name="compactdefargs" value="1" id="440" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="441">
+                            <attributelist id="442" addr="b7735ef8" >
+                                <attribute name="name" value="psz_name" id="443" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="444" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="445">
+                            <attributelist id="446" addr="b7735f88" >
+                                <attribute name="name" value="b_loop" id="447" addr="b7738278" />
+                                <attribute name="type" value="int" id="448" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="449" addr="b7738278" />
+                    <attribute name="type" value="int" id="450" addr="b7738278" />
+                    <attribute name="sym_symtab" value="b772b3d8" id="451" addr="b772b3d8" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="452" addr="b7738278" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="453" addr="b7736268" >
+                <attributelist id="454" addr="b7736268" >
+                    <attribute name="sym_name" value="libvlc_vlm_set_mux" id="455" addr="b7738278" />
+                    <attribute name="name" value="libvlc_vlm_set_mux" id="456" addr="b7738278" />
+                    <attribute name="decl" value="f(p.libvlc_instance_t,p.q(const).char,p.q(const).char)." id="457" addr="b7738278" />
+                    <parmlist id="458" addr="b77360d8" >
+                        <parm id="459">
+                            <attributelist id="460" addr="b77360d8" >
+                                <attribute name="name" value="p_instance" id="461" addr="b7738278" />
+                                <attribute name="type" value="p.libvlc_instance_t" id="462" addr="b7738278" />
+                                <attribute name="compactdefargs" value="1" id="463" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="464">
+                            <attributelist id="465" addr="b7736178" >
+                                <attribute name="name" value="psz_name" id="466" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="467" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="468">
+                            <attributelist id="469" addr="b7736218" >
+                                <attribute name="name" value="psz_mux" id="470" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="471" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="472" addr="b7738278" />
+                    <attribute name="type" value="int" id="473" addr="b7738278" />
+                    <attribute name="sym_symtab" value="b772b3d8" id="474" addr="b772b3d8" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="475" addr="b7738278" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="476" addr="b77367f8" >
+                <attributelist id="477" addr="b77367f8" >
+                    <attribute name="sym_name" value="libvlc_vlm_change_media" id="478" addr="b7738278" />
+                    <attribute name="name" value="libvlc_vlm_change_media" id="479" addr="b7738278" />
+                    <attribute name="decl" value="f(p.libvlc_instance_t,p.q(const).char,p.q(const).char,p.q(const).char,int,p.q(const).p.q(const).char,int,int)." id="480" addr="b7738278" />
+                    <parmlist id="481" addr="b7736368" >
+                        <parm id="482">
+                            <attributelist id="483" addr="b7736368" >
+                                <attribute name="name" value="p_instance" id="484" addr="b7738278" />
+                                <attribute name="type" value="p.libvlc_instance_t" id="485" addr="b7738278" />
+                                <attribute name="compactdefargs" value="1" id="486" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="487">
+                            <attributelist id="488" addr="b7736408" >
+                                <attribute name="name" value="psz_name" id="489" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="490" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="491">
+                            <attributelist id="492" addr="b77364a8" >
+                                <attribute name="name" value="psz_input" id="493" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="494" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="495">
+                            <attributelist id="496" addr="b7736548" >
+                                <attribute name="name" value="psz_output" id="497" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="498" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="499">
+                            <attributelist id="500" addr="b77365d8" >
+                                <attribute name="name" value="i_options" id="501" addr="b7738278" />
+                                <attribute name="type" value="int" id="502" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="503">
+                            <attributelist id="504" addr="b7736688" >
+                                <attribute name="name" value="ppsz_options" id="505" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).p.q(const).char" id="506" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="507">
+                            <attributelist id="508" addr="b7736718" >
+                                <attribute name="name" value="b_enabled" id="509" addr="b7738278" />
+                                <attribute name="type" value="int" id="510" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="511">
+                            <attributelist id="512" addr="b77367a8" >
+                                <attribute name="name" value="b_loop" id="513" addr="b7738278" />
+                                <attribute name="type" value="int" id="514" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="515" addr="b7738278" />
+                    <attribute name="type" value="int" id="516" addr="b7738278" />
+                    <attribute name="sym_symtab" value="b772b3d8" id="517" addr="b772b3d8" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="518" addr="b7738278" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="519" addr="b77369e8" >
+                <attributelist id="520" addr="b77369e8" >
+                    <attribute name="sym_name" value="libvlc_vlm_play_media" id="521" addr="b7738278" />
+                    <attribute name="name" value="libvlc_vlm_play_media" id="522" addr="b7738278" />
+                    <attribute name="decl" value="f(p.libvlc_instance_t,p.q(const).char)." id="523" addr="b7738278" />
+                    <parmlist id="524" addr="b77368f8" >
+                        <parm id="525">
+                            <attributelist id="526" addr="b77368f8" >
+                                <attribute name="name" value="p_instance" id="527" addr="b7738278" />
+                                <attribute name="type" value="p.libvlc_instance_t" id="528" addr="b7738278" />
+                                <attribute name="compactdefargs" value="1" id="529" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="530">
+                            <attributelist id="531" addr="b7736998" >
+                                <attribute name="name" value="psz_name" id="532" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="533" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="534" addr="b7738278" />
+                    <attribute name="type" value="int" id="535" addr="b7738278" />
+                    <attribute name="sym_symtab" value="b772b3d8" id="536" addr="b772b3d8" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="537" addr="b7738278" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="538" addr="b7736bd8" >
+                <attributelist id="539" addr="b7736bd8" >
+                    <attribute name="sym_name" value="libvlc_vlm_stop_media" id="540" addr="b7738278" />
+                    <attribute name="name" value="libvlc_vlm_stop_media" id="541" addr="b7738278" />
+                    <attribute name="decl" value="f(p.libvlc_instance_t,p.q(const).char)." id="542" addr="b7738278" />
+                    <parmlist id="543" addr="b7736ae8" >
+                        <parm id="544">
+                            <attributelist id="545" addr="b7736ae8" >
+                                <attribute name="name" value="p_instance" id="546" addr="b7738278" />
+                                <attribute name="type" value="p.libvlc_instance_t" id="547" addr="b7738278" />
+                                <attribute name="compactdefargs" value="1" id="548" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="549">
+                            <attributelist id="550" addr="b7736b88" >
+                                <attribute name="name" value="psz_name" id="551" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="552" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="553" addr="b7738278" />
+                    <attribute name="type" value="int" id="554" addr="b7738278" />
+                    <attribute name="sym_symtab" value="b772b3d8" id="555" addr="b772b3d8" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="556" addr="b7738278" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="557" addr="b7736dc8" >
+                <attributelist id="558" addr="b7736dc8" >
+                    <attribute name="sym_name" value="libvlc_vlm_pause_media" id="559" addr="b7738278" />
+                    <attribute name="name" value="libvlc_vlm_pause_media" id="560" addr="b7738278" />
+                    <attribute name="decl" value="f(p.libvlc_instance_t,p.q(const).char)." id="561" addr="b7738278" />
+                    <parmlist id="562" addr="b7736cd8" >
+                        <parm id="563">
+                            <attributelist id="564" addr="b7736cd8" >
+                                <attribute name="name" value="p_instance" id="565" addr="b7738278" />
+                                <attribute name="type" value="p.libvlc_instance_t" id="566" addr="b7738278" />
+                                <attribute name="compactdefargs" value="1" id="567" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="568">
+                            <attributelist id="569" addr="b7736d78" >
+                                <attribute name="name" value="psz_name" id="570" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="571" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="572" addr="b7738278" />
+                    <attribute name="type" value="int" id="573" addr="b7738278" />
+                    <attribute name="sym_symtab" value="b772b3d8" id="574" addr="b772b3d8" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="575" addr="b7738278" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="576" addr="b7737048" >
+                <attributelist id="577" addr="b7737048" >
+                    <attribute name="sym_name" value="libvlc_vlm_seek_media" id="578" addr="b7738278" />
+                    <attribute name="name" value="libvlc_vlm_seek_media" id="579" addr="b7738278" />
+                    <attribute name="decl" value="f(p.libvlc_instance_t,p.q(const).char,float)." id="580" addr="b7738278" />
+                    <parmlist id="581" addr="b7736ec8" >
+                        <parm id="582">
+                            <attributelist id="583" addr="b7736ec8" >
+                                <attribute name="name" value="p_instance" id="584" addr="b7738278" />
+                                <attribute name="type" value="p.libvlc_instance_t" id="585" addr="b7738278" />
+                                <attribute name="compactdefargs" value="1" id="586" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="587">
+                            <attributelist id="588" addr="b7736f68" >
+                                <attribute name="name" value="psz_name" id="589" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="590" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="591">
+                            <attributelist id="592" addr="b7736ff8" >
+                                <attribute name="name" value="f_percentage" id="593" addr="b7738278" />
+                                <attribute name="type" value="float" id="594" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="595" addr="b7738278" />
+                    <attribute name="type" value="int" id="596" addr="b7738278" />
+                    <attribute name="sym_symtab" value="b772b3d8" id="597" addr="b772b3d8" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="598" addr="b7738278" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="599" addr="b7737248" >
+                <attributelist id="600" addr="b7737248" >
+                    <attribute name="sym_name" value="libvlc_vlm_show_media" id="601" addr="b7738278" />
+                    <attribute name="name" value="libvlc_vlm_show_media" id="602" addr="b7738278" />
+                    <attribute name="decl" value="f(p.libvlc_instance_t,p.q(const).char).p." id="603" addr="b7738278" />
+                    <parmlist id="604" addr="b7737168" >
+                        <parm id="605">
+                            <attributelist id="606" addr="b7737168" >
+                                <attribute name="name" value="p_instance" id="607" addr="b7738278" />
+                                <attribute name="type" value="p.libvlc_instance_t" id="608" addr="b7738278" />
+                                <attribute name="compactdefargs" value="1" id="609" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="610">
+                            <attributelist id="611" addr="b7737208" >
+                                <attribute name="name" value="psz_name" id="612" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="613" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="614" addr="b7738278" />
+                    <attribute name="type" value="q(const).char" id="615" addr="b7738278" />
+                    <attribute name="sym_symtab" value="b772b3d8" id="616" addr="b772b3d8" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="617" addr="b7738278" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="618" addr="b77374c8" >
+                <attributelist id="619" addr="b77374c8" >
+                    <attribute name="sym_name" value="libvlc_vlm_get_media_instance_position" id="620" addr="b7738278" />
+                    <attribute name="name" value="libvlc_vlm_get_media_instance_position" id="621" addr="b7738278" />
+                    <attribute name="decl" value="f(p.libvlc_instance_t,p.q(const).char,int)." id="622" addr="b7738278" />
+                    <parmlist id="623" addr="b7737348" >
+                        <parm id="624">
+                            <attributelist id="625" addr="b7737348" >
+                                <attribute name="name" value="p_instance" id="626" addr="b7738278" />
+                                <attribute name="type" value="p.libvlc_instance_t" id="627" addr="b7738278" />
+                                <attribute name="compactdefargs" value="1" id="628" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="629">
+                            <attributelist id="630" addr="b77373e8" >
+                                <attribute name="name" value="psz_name" id="631" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="632" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="633">
+                            <attributelist id="634" addr="b7737478" >
+                                <attribute name="name" value="i_instance" id="635" addr="b7738278" />
+                                <attribute name="type" value="int" id="636" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="637" addr="b7738278" />
+                    <attribute name="type" value="float" id="638" addr="b7738278" />
+                    <attribute name="sym_symtab" value="b772b3d8" id="639" addr="b772b3d8" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="640" addr="b7738278" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="641" addr="b7737748" >
+                <attributelist id="642" addr="b7737748" >
+                    <attribute name="sym_name" value="libvlc_vlm_get_media_instance_time" id="643" addr="b7738278" />
+                    <attribute name="name" value="libvlc_vlm_get_media_instance_time" id="644" addr="b7738278" />
+                    <attribute name="decl" value="f(p.libvlc_instance_t,p.q(const).char,int)." id="645" addr="b7738278" />
+                    <parmlist id="646" addr="b77375c8" >
+                        <parm id="647">
+                            <attributelist id="648" addr="b77375c8" >
+                                <attribute name="name" value="p_instance" id="649" addr="b7738278" />
+                                <attribute name="type" value="p.libvlc_instance_t" id="650" addr="b7738278" />
+                                <attribute name="compactdefargs" value="1" id="651" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="652">
+                            <attributelist id="653" addr="b7737668" >
+                                <attribute name="name" value="psz_name" id="654" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="655" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="656">
+                            <attributelist id="657" addr="b77376f8" >
+                                <attribute name="name" value="i_instance" id="658" addr="b7738278" />
+                                <attribute name="type" value="int" id="659" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="660" addr="b7738278" />
+                    <attribute name="type" value="int" id="661" addr="b7738278" />
+                    <attribute name="sym_symtab" value="b772b3d8" id="662" addr="b772b3d8" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="663" addr="b7738278" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="664" addr="b77379c8" >
+                <attributelist id="665" addr="b77379c8" >
+                    <attribute name="sym_name" value="libvlc_vlm_get_media_instance_length" id="666" addr="b7738278" />
+                    <attribute name="name" value="libvlc_vlm_get_media_instance_length" id="667" addr="b7738278" />
+                    <attribute name="decl" value="f(p.libvlc_instance_t,p.q(const).char,int)." id="668" addr="b7738278" />
+                    <parmlist id="669" addr="b7737848" >
+                        <parm id="670">
+                            <attributelist id="671" addr="b7737848" >
+                                <attribute name="name" value="p_instance" id="672" addr="b7738278" />
+                                <attribute name="type" value="p.libvlc_instance_t" id="673" addr="b7738278" />
+                                <attribute name="compactdefargs" value="1" id="674" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="675">
+                            <attributelist id="676" addr="b77378e8" >
+                                <attribute name="name" value="psz_name" id="677" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="678" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="679">
+                            <attributelist id="680" addr="b7737978" >
+                                <attribute name="name" value="i_instance" id="681" addr="b7738278" />
+                                <attribute name="type" value="int" id="682" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="683" addr="b7738278" />
+                    <attribute name="type" value="int" id="684" addr="b7738278" />
+                    <attribute name="sym_symtab" value="b772b3d8" id="685" addr="b772b3d8" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="686" addr="b7738278" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="687" addr="b7737c48" >
+                <attributelist id="688" addr="b7737c48" >
+                    <attribute name="sym_name" value="libvlc_vlm_get_media_instance_rate" id="689" addr="b7738278" />
+                    <attribute name="name" value="libvlc_vlm_get_media_instance_rate" id="690" addr="b7738278" />
+                    <attribute name="decl" value="f(p.libvlc_instance_t,p.q(const).char,int)." id="691" addr="b7738278" />
+                    <parmlist id="692" addr="b7737ac8" >
+                        <parm id="693">
+                            <attributelist id="694" addr="b7737ac8" >
+                                <attribute name="name" value="p_instance" id="695" addr="b7738278" />
+                                <attribute name="type" value="p.libvlc_instance_t" id="696" addr="b7738278" />
+                                <attribute name="compactdefargs" value="1" id="697" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="698">
+                            <attributelist id="699" addr="b7737b68" >
+                                <attribute name="name" value="psz_name" id="700" addr="b7738278" />
+                                <attribute name="type" value="p.q(const).char" id="701" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                        <parm id="702">
+                            <attributelist id="703" addr="b7737bf8" >
+                                <attribute name="name" value="i_instance" id="704" addr="b7738278" />
+                                <attribute name="type" value="int" id="705" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="706" addr="b7738278" />
+                    <attribute name="type" value="int" id="707" addr="b7738278" />
+                    <attribute name="sym_symtab" value="b772b3d8" id="708" addr="b772b3d8" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="709" addr="b7738278" />
+                </attributelist >
+             
+            </cdecl >
+            <cdecl id="710" addr="b7737d98" >
+                <attributelist id="711" addr="b7737d98" >
+                    <attribute name="sym_name" value="libvlc_vlm_get_event_manager" id="712" addr="b7738278" />
+                    <attribute name="name" value="libvlc_vlm_get_event_manager" id="713" addr="b7738278" />
+                    <attribute name="decl" value="f(p.libvlc_instance_t).p." id="714" addr="b7738278" />
+                    <parmlist id="715" addr="b7737d58" >
+                        <parm id="716">
+                            <attributelist id="717" addr="b7737d58" >
+                                <attribute name="name" value="p_instance" id="718" addr="b7738278" />
+                                <attribute name="type" value="p.libvlc_instance_t" id="719" addr="b7738278" />
+                                <attribute name="compactdefargs" value="1" id="720" addr="b7738278" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                    <attribute name="kind" value="function" id="721" addr="b7738278" />
+                    <attribute name="type" value="libvlc_event_manager_t" id="722" addr="b7738278" />
+                    <attribute name="sym_symtab" value="b772b3d8" id="723" addr="b772b3d8" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="724" addr="b7738278" />
+                </attributelist >
+             
+            </cdecl >
+        </include >
+        <insert id="725" addr="b7737e28" >
+            <attributelist id="726" addr="b7737e28" >
+                <attribute name="code" value="&#10;	end&#10;end&#10;" id="727" addr="b7738278" />
+            </attributelist >
+         
+        </insert >
+    </include >
+</top >

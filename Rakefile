@@ -1,5 +1,9 @@
+$LOAD_PATH.unshift('lib')
+
 require 'rubygems'
 require 'bundler'
+require 'ffi-swig-generator'
+
 begin
   Bundler.setup(:default, :development)
 rescue Bundler::BundlerError => e
@@ -7,22 +11,24 @@ rescue Bundler::BundlerError => e
   $stderr.puts "Run `bundle install` to install missing gems"
   exit e.status_code
 end
-require 'rake'
 
+require 'rake'
 require 'jeweler'
+require 'vlcrb/version'
+
 Jeweler::Tasks.new do |gem|
-  # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "vlcrb"
   gem.homepage = "http://github.com/nashby/vlcrb"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.version = VLC::Version::STRING
+  gem.summary = %Q{Ruby wrapper for libVLC}
+  gem.description = %Q{Ruby wrapper for libVLC}
   gem.email = "younash@gmail.com"
   gem.authors = ["nashby"]
-  # Include your dependencies below. Runtime dependencies are required when using your gem,
-  # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
-  #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
-  #  gem.add_development_dependency 'rspec', '> 1.2.3'
+  gem.add_runtime_dependency 'ffi'
+  gem.add_development_dependency 'ffi-swig-generator'
+  gem.files.include Dir.glob('lib/**/*.rb')
+  gem.files.exclude 'generated', 'interfaces', 'pkg'
 end
 Jeweler::RubygemsDotOrgTasks.new
 
@@ -51,3 +57,19 @@ Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
+
+require 'ffi-swig-generator'
+FFI::Generator::Task.new do |task|
+	task.input_fn = 'interfaces/*.i'
+	task.output_dir = "generated/"
+end
+
+task :move_generated do
+	files = FileList["generated/*.rb"]
+	files.map do |file|
+		new_file = File.basename(file.gsub("_wrap", ""))
+		cp file, "lib/vlcrb/ffi/#{new_file}"
+	end
+	#mv "generated/libvlc_events_wrap.rb", "lib/vlcrb/ffi"
+end
+

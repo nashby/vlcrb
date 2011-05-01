@@ -1,0 +1,411 @@
+<?xml version="1.0" ?> 
+<top id="1" addr="b78a59e8" >
+    <attributelist id="2" addr="b78a59e8" >
+        <attribute name="outfile" value="interfaces/vlc_wrap.c" id="3" addr="b78ae598" />
+        <attribute name="name" value="vlc" id="4" addr="b78ae598" />
+        <attribute name="module" value="vlc" id="5" addr="b78ae208" />
+        <attribute name="inputfile" value="interfaces/vlc.i" id="6" addr="b78ae598" />
+        <attribute name="classes" value="b78ae488" id="7" addr="b78ae488" />
+        <attribute name="infile" value="interfaces/vlc.i" id="8" addr="b78ae598" />
+        <attribute name="outfile_h" value="interfaces/vlc_wrap.h" id="9" addr="b78ae598" />
+    </attributelist >
+
+    <include id="10" addr="b78acf88" >
+        <attributelist id="11" addr="b78acf88" >
+            <attribute name="name" value="/usr/share/swig1.3//swig.swg" id="12" addr="b78ae598" />
+        </attributelist >
+
+        <include id="13" addr="b78acfb8" >
+            <attributelist id="14" addr="b78acfb8" >
+                <attribute name="name" value="/usr/share/swig1.3//swigwarnings.swg" id="15" addr="b78ae598" />
+            </attributelist >
+
+            <include id="16" addr="b78ad088" >
+                <attributelist id="17" addr="b78ad088" >
+                    <attribute name="name" value="/usr/share/swig1.3//swigwarn.swg" id="18" addr="b78ae598" />
+                </attributelist >
+             
+            </include >
+        </include >
+        <typemap id="19" addr="b78ad278" >
+            <attributelist id="20" addr="b78ad278" >
+                <attribute name="code" value="free($1);" id="21" addr="b78ae598" />
+                <attribute name="method" value="newfree" id="22" addr="b78ae598" />
+            </attributelist >
+
+            <typemapitem id="23" addr="b78ad1e8" >
+                <attributelist id="24" addr="b78ad1e8" >
+                    <parmlist id="25" addr="b78ad208" >
+                        <parm id="26">
+                            <attributelist id="27" addr="b78ad208" >
+                                <attribute name="type" value="p.char" id="28" addr="b78ae598" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="29" addr="b78ad388" >
+            <attributelist id="30" addr="b78ad388" >
+                <attribute name="code" value="{&#10;  if ($1) free((char *)$1);&#10;  if ($input) {&#10;     $1 = ($1_type) malloc(strlen((const char *)$input)+1);&#10;     strcpy((char *)$1, (const char *)$input);&#10;  } else {&#10;     $1 = 0;&#10;  }&#10;}" id="31" addr="b78ae598" />
+                <attribute name="method" value="memberin" id="32" addr="b78ae598" />
+            </attributelist >
+
+            <typemapitem id="33" addr="b78ad328" >
+                <attributelist id="34" addr="b78ad328" >
+                    <parmlist id="35" addr="b78ad348" >
+                        <parm id="36">
+                            <attributelist id="37" addr="b78ad348" >
+                                <attribute name="type" value="p.char" id="38" addr="b78ae598" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="39" addr="b78ad4b8" >
+            <attributelist id="40" addr="b78ad4b8" >
+                <kwargs id="41" addr="b78ad3b8" >
+                    <attributelist id="42" addr="b78ad3b8" >
+                        <attribute name="name" value="warning" id="43" addr="b78ae598" />
+                        <attribute name="value" value="451:Setting a const char * variable may leak memory." id="44" addr="b78ae598" />
+                    </attributelist >
+                    <kwargssitem id="45" addr="b78ad3c8" >
+                        <attributelist id="46" addr="b78ad3c8" >
+                        </attributelist >
+                    </kwargssitem >
+                    <kwargssitem id="47" addr="b78ad3e8" >
+                        <attributelist id="48" addr="b78ad3e8" >
+                        </attributelist >
+                    </kwargssitem >
+                </kwargs >
+                <attribute name="code" value="{&#10;  if ($input) {&#10;     $1 = ($1_type) malloc(strlen((const char *)$input)+1);&#10;     strcpy((char *)$1, (const char *)$input);&#10;  } else {&#10;     $1 = 0;&#10;  }&#10;}" id="49" addr="b78ae598" />
+                <attribute name="method" value="memberin" id="50" addr="b78ae598" />
+            </attributelist >
+
+            <typemapitem id="51" addr="b78ad458" >
+                <attributelist id="52" addr="b78ad458" >
+                    <parmlist id="53" addr="b78ad478" >
+                        <parm id="54">
+                            <attributelist id="55" addr="b78ad478" >
+                                <attribute name="type" value="p.q(const).char" id="56" addr="b78ae598" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="57" addr="b78ad5a8" >
+            <attributelist id="58" addr="b78ad5a8" >
+                <attribute name="code" value="{&#10;  if ($1) free((char *)$1);&#10;  if ($input) {&#10;     $1 = ($1_type) malloc(strlen((const char *)$input)+1);&#10;     strcpy((char *)$1, (const char *)$input);&#10;  } else {&#10;     $1 = 0;&#10;  }&#10;}" id="59" addr="b78ae598" />
+                <attribute name="method" value="globalin" id="60" addr="b78ae598" />
+            </attributelist >
+
+            <typemapitem id="61" addr="b78ad548" >
+                <attributelist id="62" addr="b78ad548" >
+                    <parmlist id="63" addr="b78ad568" >
+                        <parm id="64">
+                            <attributelist id="65" addr="b78ad568" >
+                                <attribute name="type" value="p.char" id="66" addr="b78ae598" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="67" addr="b78ad6c8" >
+            <attributelist id="68" addr="b78ad6c8" >
+                <kwargs id="69" addr="b78ad5d8" >
+                    <attributelist id="70" addr="b78ad5d8" >
+                        <attribute name="name" value="warning" id="71" addr="b78ae598" />
+                        <attribute name="value" value="451:Setting a const char * variable may leak memory." id="72" addr="b78ae598" />
+                    </attributelist >
+                    <kwargssitem id="73" addr="b78ad5e8" >
+                        <attributelist id="74" addr="b78ad5e8" >
+                        </attributelist >
+                    </kwargssitem >
+                    <kwargssitem id="75" addr="b78ad5f8" >
+                        <attributelist id="76" addr="b78ad5f8" >
+                        </attributelist >
+                    </kwargssitem >
+                </kwargs >
+                <attribute name="code" value="{&#10;  if ($input) {&#10;     $1 = ($1_type) malloc(strlen((const char *)$input)+1);&#10;     strcpy((char *)$1, (const char *)$input);&#10;  } else {&#10;     $1 = 0;&#10;  }&#10;}" id="77" addr="b78ae598" />
+                <attribute name="method" value="globalin" id="78" addr="b78ae598" />
+            </attributelist >
+
+            <typemapitem id="79" addr="b78ad668" >
+                <attributelist id="80" addr="b78ad668" >
+                    <parmlist id="81" addr="b78ad688" >
+                        <parm id="82">
+                            <attributelist id="83" addr="b78ad688" >
+                                <attribute name="type" value="p.q(const).char" id="84" addr="b78ae598" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="85" addr="b78ad7d8" >
+            <attributelist id="86" addr="b78ad7d8" >
+                <attribute name="code" value="{&#10;  if($input) {&#10;    strncpy((char*)$1, (const char *)$input, $1_dim0-1);&#10;    $1[$1_dim0-1] = 0;&#10;  } else {&#10;    $1[0] = 0;&#10;  }&#10;}" id="87" addr="b78ae598" />
+                <attribute name="method" value="memberin" id="88" addr="b78ae598" />
+            </attributelist >
+
+            <typemapitem id="89" addr="b78ad778" >
+                <attributelist id="90" addr="b78ad778" >
+                    <parmlist id="91" addr="b78ad798" >
+                        <parm id="92">
+                            <attributelist id="93" addr="b78ad798" >
+                                <attribute name="type" value="a(ANY).char" id="94" addr="b78ae598" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="95" addr="b78ad8d8" >
+            <attributelist id="96" addr="b78ad8d8" >
+                <attribute name="code" value="{&#10;  if($input) {&#10;    strncpy((char*)$1, (const char *)$input, $1_dim0-1);&#10;    $1[$1_dim0-1] = 0;&#10;  } else {&#10;    $1[0] = 0;&#10;  }&#10;}" id="97" addr="b78ae598" />
+                <attribute name="method" value="globalin" id="98" addr="b78ae598" />
+            </attributelist >
+
+            <typemapitem id="99" addr="b78ad878" >
+                <attributelist id="100" addr="b78ad878" >
+                    <parmlist id="101" addr="b78ad898" >
+                        <parm id="102">
+                            <attributelist id="103" addr="b78ad898" >
+                                <attribute name="type" value="a(ANY).char" id="104" addr="b78ae598" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="105" addr="b78ad9b8" >
+            <attributelist id="106" addr="b78ad9b8" >
+                <attribute name="code" value="{&#10;  if ($input) strcpy((char *)$1, (const char *)$input);&#10;  else $1[0] = 0;&#10;}" id="107" addr="b78ae598" />
+                <attribute name="method" value="memberin" id="108" addr="b78ae598" />
+            </attributelist >
+
+            <typemapitem id="109" addr="b78ad958" >
+                <attributelist id="110" addr="b78ad958" >
+                    <parmlist id="111" addr="b78ad978" >
+                        <parm id="112">
+                            <attributelist id="113" addr="b78ad978" >
+                                <attribute name="type" value="a().char" id="114" addr="b78ae598" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="115" addr="b78ada98" >
+            <attributelist id="116" addr="b78ada98" >
+                <attribute name="code" value="{&#10;  if ($input) strcpy((char *)$1, (const char *)$input);&#10;  else $1[0] = 0;&#10;}" id="117" addr="b78ae598" />
+                <attribute name="method" value="globalin" id="118" addr="b78ae598" />
+            </attributelist >
+
+            <typemapitem id="119" addr="b78ada38" >
+                <attributelist id="120" addr="b78ada38" >
+                    <parmlist id="121" addr="b78ada58" >
+                        <parm id="122">
+                            <attributelist id="123" addr="b78ada58" >
+                                <attribute name="type" value="a().char" id="124" addr="b78ae598" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="125" addr="b78adb98" >
+            <attributelist id="126" addr="b78adb98" >
+                <attribute name="code" value="{&#10;  size_t ii;&#10;  $1_basetype *b = ($1_basetype *) $1;&#10;  for (ii = 0; ii &lt; (size_t)$1_size; ii++) b[ii] = *(($1_basetype *) $input + ii);&#10;}" id="127" addr="b78ae598" />
+                <attribute name="method" value="memberin" id="128" addr="b78ae598" />
+            </attributelist >
+
+            <typemapitem id="129" addr="b78adb38" >
+                <attributelist id="130" addr="b78adb38" >
+                    <parmlist id="131" addr="b78adb58" >
+                        <parm id="132">
+                            <attributelist id="133" addr="b78adb58" >
+                                <attribute name="type" value="a(ANY).SWIGTYPE" id="134" addr="b78ae598" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="135" addr="b78adc98" >
+            <attributelist id="136" addr="b78adc98" >
+                <attribute name="code" value="{&#10;  size_t ii;&#10;  $1_basetype *b = ($1_basetype *) $1;&#10;  for (ii = 0; ii &lt; (size_t)$1_size; ii++) b[ii] = *(($1_basetype *) $input + ii);&#10;}" id="137" addr="b78ae598" />
+                <attribute name="method" value="globalin" id="138" addr="b78ae598" />
+            </attributelist >
+
+            <typemapitem id="139" addr="b78adc38" >
+                <attributelist id="140" addr="b78adc38" >
+                    <parmlist id="141" addr="b78adc58" >
+                        <parm id="142">
+                            <attributelist id="143" addr="b78adc58" >
+                                <attribute name="type" value="a(ANY).SWIGTYPE" id="144" addr="b78ae598" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="145" addr="b78addb8" >
+            <attributelist id="146" addr="b78addb8" >
+                <attribute name="code" value="{&#10;  $basetype (*inp)[$1_dim1] = ($basetype (*)[$1_dim1])($input);&#10;  $basetype (*dest)[$1_dim1] = ($basetype (*)[$1_dim1])($1);&#10;  size_t ii = 0;&#10;  for (; ii &lt; $1_dim0; ++ii) {&#10;    $basetype *ip = inp[ii];&#10;    $basetype *dp = dest[ii];&#10;    size_t jj = 0;&#10;    for (; jj &lt; $1_dim1; ++jj) dp[jj] = ip[jj];&#10;  }&#10;}" id="147" addr="b78ae598" />
+                <attribute name="method" value="memberin" id="148" addr="b78ae598" />
+            </attributelist >
+
+            <typemapitem id="149" addr="b78add28" >
+                <attributelist id="150" addr="b78add28" >
+                    <parmlist id="151" addr="b78add78" >
+                        <parm id="152">
+                            <attributelist id="153" addr="b78add78" >
+                                <attribute name="type" value="a(ANY).a(ANY).SWIGTYPE" id="154" addr="b78ae598" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="155" addr="b78aded8" >
+            <attributelist id="156" addr="b78aded8" >
+                <attribute name="code" value="{&#10;  $basetype (*inp)[$1_dim1] = ($basetype (*)[$1_dim1])($input);&#10;  $basetype (*dest)[$1_dim1] = ($basetype (*)[$1_dim1])($1);&#10;  size_t ii = 0;&#10;  for (; ii &lt; $1_dim0; ++ii) {&#10;    $basetype *ip = inp[ii];&#10;    $basetype *dp = dest[ii];&#10;    size_t jj = 0;&#10;    for (; jj &lt; $1_dim1; ++jj) dp[jj] = ip[jj];&#10;  }&#10;}" id="157" addr="b78ae598" />
+                <attribute name="method" value="globalin" id="158" addr="b78ae598" />
+            </attributelist >
+
+            <typemapitem id="159" addr="b78ade48" >
+                <attributelist id="160" addr="b78ade48" >
+                    <parmlist id="161" addr="b78ade98" >
+                        <parm id="162">
+                            <attributelist id="163" addr="b78ade98" >
+                                <attribute name="type" value="a(ANY).a(ANY).SWIGTYPE" id="164" addr="b78ae598" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <typemap id="165" addr="b78ae0d8" >
+            <attributelist id="166" addr="b78ae0d8" >
+                <kwargs id="167" addr="b78adf18" >
+                    <attributelist id="168" addr="b78adf18" >
+                        <attribute name="name" value="numinputs" id="169" addr="b78ae598" />
+                        <attribute name="value" value="0" id="170" addr="b78ae598" />
+                    </attributelist >
+                    <kwargssitem id="171" addr="b78adf28" >
+                        <attributelist id="172" addr="b78adf28" >
+                        </attributelist >
+                    </kwargssitem >
+                    <kwargssitem id="173" addr="b78adf38" >
+                        <attributelist id="174" addr="b78adf38" >
+                        </attributelist >
+                    </kwargssitem >
+                </kwargs >
+                <attribute name="code" value="" id="175" addr="b78ae598" />
+                <attribute name="method" value="in" id="176" addr="b78ae598" />
+            </attributelist >
+
+            <typemapitem id="177" addr="b78adfb8" >
+                <attributelist id="178" addr="b78adfb8" >
+                    <parmlist id="179" addr="b78adfd8" >
+                        <parm id="180">
+                            <attributelist id="181" addr="b78adfd8" >
+                                <attribute name="name" value="VARARGS_SENTINEL" id="182" addr="b78ae598" />
+                                <attribute name="type" value="p.SWIGTYPE" id="183" addr="b78ae598" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+            <typemapitem id="184" addr="b78ae068" >
+                <attributelist id="185" addr="b78ae068" >
+                    <parmlist id="186" addr="b78ae088" >
+                        <parm id="187">
+                            <attributelist id="188" addr="b78ae088" >
+                                <attribute name="name" value="VARARGS_SENTINEL" id="189" addr="b78ae598" />
+                                <attribute name="type" value="SWIGTYPE" id="190" addr="b78ae598" />
+                            </attributelist >
+                        </parm >
+                    </parmlist >
+                </attributelist >
+             
+            </typemapitem >
+        </typemap >
+        <insert id="191" addr="b78ae118" >
+            <attributelist id="192" addr="b78ae118" >
+                <attribute name="code" value="/* -----------------------------------------------------------------------------&#10; *  This section contains generic SWIG labels for method/variable&#10; *  declarations/attributes, and other compiler dependent labels.&#10; * ----------------------------------------------------------------------------- */&#10;&#10;/* template workaround for compilers that cannot correctly implement the C++ standard */&#10;#ifndef SWIGTEMPLATEDISAMBIGUATOR&#10;# if defined(__SUNPRO_CC) &amp;&amp; (__SUNPRO_CC &lt;= 0x560)&#10;#  define SWIGTEMPLATEDISAMBIGUATOR template&#10;# elif defined(__HP_aCC)&#10;/* Needed even with `aCC -AA' when `aCC -V' reports HP ANSI C++ B3910B A.03.55 */&#10;/* If we find a maximum version that requires this, the test would be __HP_aCC &lt;= 35500 for A.03.55 */&#10;#  define SWIGTEMPLATEDISAMBIGUATOR template&#10;# else&#10;#  define SWIGTEMPLATEDISAMBIGUATOR&#10;# endif&#10;#endif&#10;&#10;/* inline attribute */&#10;#ifndef SWIGINLINE&#10;# if defined(__cplusplus) || (defined(__GNUC__) &amp;&amp; !defined(__STRICT_ANSI__))&#10;#   define SWIGINLINE inline&#10;# else&#10;#   define SWIGINLINE&#10;# endif&#10;#endif&#10;&#10;/* attribute recognised by some compilers to avoid 'unused' warnings */&#10;#ifndef SWIGUNUSED&#10;# if defined(__GNUC__)&#10;#   if !(defined(__cplusplus)) || (__GNUC__ > 3 || (__GNUC__ == 3 &amp;&amp; __GNUC_MINOR__ >= 4))&#10;#     define SWIGUNUSED __attribute__ ((__unused__)) &#10;#   else&#10;#     define SWIGUNUSED&#10;#   endif&#10;# elif defined(__ICC)&#10;#   define SWIGUNUSED __attribute__ ((__unused__)) &#10;# else&#10;#   define SWIGUNUSED &#10;# endif&#10;#endif&#10;&#10;#ifndef SWIG_MSC_UNSUPPRESS_4505&#10;# if defined(_MSC_VER)&#10;#   pragma warning(disable : 4505) /* unreferenced local function has been removed */&#10;# endif &#10;#endif&#10;&#10;#ifndef SWIGUNUSEDPARM&#10;# ifdef __cplusplus&#10;#   define SWIGUNUSEDPARM(p)&#10;# else&#10;#   define SWIGUNUSEDPARM(p) p SWIGUNUSED &#10;# endif&#10;#endif&#10;&#10;/* internal SWIG method */&#10;#ifndef SWIGINTERN&#10;# define SWIGINTERN static SWIGUNUSED&#10;#endif&#10;&#10;/* internal inline SWIG method */&#10;#ifndef SWIGINTERNINLINE&#10;# define SWIGINTERNINLINE SWIGINTERN SWIGINLINE&#10;#endif&#10;&#10;/* exporting methods */&#10;#if (__GNUC__ >= 4) || (__GNUC__ == 3 &amp;&amp; __GNUC_MINOR__ >= 4)&#10;#  ifndef GCC_HASCLASSVISIBILITY&#10;#    define GCC_HASCLASSVISIBILITY&#10;#  endif&#10;#endif&#10;&#10;#ifndef SWIGEXPORT&#10;# if defined(_WIN32) || defined(__WIN32__) || defined(__CYGWIN__)&#10;#   if defined(STATIC_LINKED)&#10;#     define SWIGEXPORT&#10;#   else&#10;#     define SWIGEXPORT __declspec(dllexport)&#10;#   endif&#10;# else&#10;#   if defined(__GNUC__) &amp;&amp; defined(GCC_HASCLASSVISIBILITY)&#10;#     define SWIGEXPORT __attribute__ ((visibility(&quot;default&quot;)))&#10;#   else&#10;#     define SWIGEXPORT&#10;#   endif&#10;# endif&#10;#endif&#10;&#10;/* calling conventions for Windows */&#10;#ifndef SWIGSTDCALL&#10;# if defined(_WIN32) || defined(__WIN32__) || defined(__CYGWIN__)&#10;#   define SWIGSTDCALL __stdcall&#10;# else&#10;#   define SWIGSTDCALL&#10;# endif &#10;#endif&#10;&#10;/* Deal with Microsoft's attempt at deprecating C standard runtime functions */&#10;#if !defined(SWIG_NO_CRT_SECURE_NO_DEPRECATE) &amp;&amp; defined(_MSC_VER) &amp;&amp; !defined(_CRT_SECURE_NO_DEPRECATE)&#10;# define _CRT_SECURE_NO_DEPRECATE&#10;#endif&#10;&#10;/* Deal with Microsoft's attempt at deprecating methods in the standard C++ library */&#10;#if !defined(SWIG_NO_SCL_SECURE_NO_DEPRECATE) &amp;&amp; defined(_MSC_VER) &amp;&amp; !defined(_SCL_SECURE_NO_DEPRECATE)&#10;# define _SCL_SECURE_NO_DEPRECATE&#10;#endif&#10;&#10;" id="193" addr="b78ae598" />
+                <attribute name="section" value="runtime" id="194" addr="b78ae598" />
+            </attributelist >
+         
+        </insert >
+    </include >
+    <include id="195" addr="b78ae1e8" >
+        <attributelist id="196" addr="b78ae1e8" >
+            <attribute name="name" value="interfaces/vlc.i" id="197" addr="b78ae598" />
+            <attribute name="module" value="" id="198" addr="b78ae238" />
+            <attribute name="options" value="b78ae198" id="199" addr="b78ae198" />
+        </attributelist >
+
+        <module id="200" addr="b78ae208" >
+            <attributelist id="201" addr="b78ae208" >
+                <attribute name="name" value="vlc" id="202" addr="b78ae598" />
+            </attributelist >
+         
+        </module >
+        <insert id="203" addr="b78ae258" >
+            <attributelist id="204" addr="b78ae258" >
+                <attribute name="code" value="&#10;module VLC&#10;  extend FFI::Library&#10;  ffi_lib &quot;libvlc&quot;&#10;" id="205" addr="b78ae598" />
+            </attributelist >
+         
+        </insert >
+        <include id="206" addr="b78ae298" >
+            <attributelist id="207" addr="b78ae298" >
+                <attribute name="name" value="interfaces/libvlc_api.h" id="208" addr="b78ae598" />
+            </attributelist >
+         
+        </include >
+        <include id="209" addr="b78ae2e8" >
+            <attributelist id="210" addr="b78ae2e8" >
+                <attribute name="name" value="/usr/include/vlc/vlc.h" id="211" addr="b78ae598" />
+            </attributelist >
+
+            <constant id="212" addr="b78ae328" >
+                <attributelist id="213" addr="b78ae328" >
+                    <attribute name="sym_name" value="VLC_VLC_H" id="214" addr="b78ae598" />
+                    <attribute name="name" value="VLC_VLC_H" id="215" addr="b78ae598" />
+                    <attribute name="feature_immutable" value="1" id="216" addr="b78ae598" />
+                    <attribute name="value" value="1" id="217" addr="b78ae598" />
+                    <attribute name="storage" value="%constant" id="218" addr="b78ae598" />
+                    <attribute name="type" value="int" id="219" addr="b78ae598" />
+                    <attribute name="sym_symtab" value="b78a53d8" id="220" addr="b78a53d8" />
+                    <attribute name="sym_overname" value="__SWIG_0" id="221" addr="b78ae598" />
+                </attributelist >
+             
+            </constant >
+        </include >
+        <insert id="222" addr="b78ae448" >
+            <attributelist id="223" addr="b78ae448" >
+                <attribute name="code" value="&#10;end&#10;" id="224" addr="b78ae598" />
+            </attributelist >
+         
+        </insert >
+    </include >
+</top >
