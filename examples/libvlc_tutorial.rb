@@ -1,4 +1,5 @@
 # example from http://wiki.videolan.org/LibVLC_Tutorial
+# see README
 require 'vlcrb'
 
 inst = VLC::LibVLC.libvlc_new(0, nil)

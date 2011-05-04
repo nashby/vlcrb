@@ -9,6 +9,10 @@ Ruby wrapper for libVLC.
 == Usage
 
   # example from http://wiki.videolan.org/LibVLC_Tutorial
+  # run it like
+  # $ ruby -Ilib examples\libvlc_tutorial.rb [requires 1.9.x]
+  # if on windows, first add libvlc.dll location to your path, like
+  # set PATH=c:\Program Files (x86)\VideoLAN\VLC;%PATH%
   require 'vlcrb'
 
   inst = VLC::LibVLC.libvlc_new(0, nil)
